@@ -1,0 +1,52 @@
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="60">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>tiktok project, calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+            <div class="calcdiv">
+                <table>
+                    <tr>
+                        <td id="screen" colspan="4" placeholder="0">0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><button onclick="deleteLastChar()">←</button></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><button name="1" value="1" onclick="placeOnScreen(this)" id="1">1</button></td>
+                        <td><button name="2" value="2" onclick="placeOnScreen(this)" id="2">2</button></td>
+                        <td><button name="3" value="3" onclick="placeOnScreen(this)" id="3">3</button></td>
+                        <td><button value="+" onclick="placeOnScreen(this)">&plus;</button></td>
+                    </tr>
+                    <tr>
+                        
+                        <td><button name="4" value="4" onclick="placeOnScreen(this)" id="4">4</button></td>
+                        <td><button name="5" value="5" onclick="placeOnScreen(this)" id="5">5</button></td>
+                        <td><button name="6" value="6" onclick="placeOnScreen(this)" id="6">6</button></td>
+                        <td><button value="-" onclick="placeOnScreen(this)">&minus;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button name="7" value="7" onclick="placeOnScreen(this)" id="7">7</button></td>
+                        <td><button name="8" value="8" onclick="placeOnScreen(this)" id="8">8</button></td>
+                        <td><button name="9" value="9" onclick="placeOnScreen(this)" id="9">9</button></td>
+                        <td><button value="*" onclick="placeOnScreen(this)">&times;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="clearScreen()">C</button></td>
+                        <td><button  name="0" value="0" onclick="placeOnScreen(this)" id="0">0</button></td>
+                        <td><button class="specificbttn" onclick="calc()">=</button></td>
+                        <td><button value="/" onclick="placeOnScreen(this)">&divide;</button></td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+        <script src="script.js"></script>
+    </body>
+</html>
